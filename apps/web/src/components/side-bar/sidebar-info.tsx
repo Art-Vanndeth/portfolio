@@ -9,10 +9,10 @@ import "@/styles/side-bar/sidebar-info.css";
 interface SideBarInfoProps {
   onToggle: () => void;
   avatar: string;
-  firstName: string;
-  lastName: string;
-  middleName: string;
-  preferredName: string;
+  firstName?: string;
+  lastName?: string;
+  middleName?: string;
+  preferredName?: string;
   status: string;
 }
 

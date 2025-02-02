@@ -1,5 +1,5 @@
 ---
-title: "Spring Boot, Kafka, and WebSocket: A Practical Approach to Real-Time Messaging"
+title: "Spring Boot, Kafka, and WebSocket"
 publishedAt: '2025-01-09'
 category: Coding
 tags: 
@@ -16,7 +16,7 @@ mathjax: false
 
 In the world of application development, real-time communication has become an essential feature. Whether it’s a social media app, a collaborative tool, or a live event streaming platform, the ability to exchange information in real-time enhances the user experience significantly. In this article, we will delve into the process of building a real-time chat application using Spring Boot, Kafka, and WebSocket.
 
-![Hugo's Go-To Stack for Building Software](/images/banner/posts/kafka-websocket.png)
+![Deth's Go-To Stack for Building Software](/images/banner/posts/kafka-websocket.png)
 
 # Spring
 

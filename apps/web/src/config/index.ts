@@ -34,7 +34,7 @@ const config: Config = {
     "Next.js",
     "React",
   ],
-  status: "Day ONE ⚡️",
+  status: "Software Engineer ⚡️",
   siteURL: "https://www.1chooo.com",
   openGraph: {
     url: "https://www.1chooo.com/",

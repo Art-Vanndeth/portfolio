@@ -9,10 +9,10 @@ const { socialLinks, contacts } = config;
 
 interface SideBarProps {
   avatar: string;
-  firstName: string;
-  lastName: string;
-  middleName: string;
-  preferredName: string;
+  firstName?: string;
+  lastName?: string;
+  middleName?: string;
+  preferredName?: string;
   status: string;
 }
 

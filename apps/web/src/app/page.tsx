@@ -26,7 +26,7 @@ const {
 } = config;
 const {
   firstName, lastName, preferredName, introduction,
-  lifestyles, techStacks, githubUsername
+  lifestyles = [], techStacks = { programmingLanguages: [], frameworks: [] }, githubUsername = ""
 } = about;
 
 export const metadata: Metadata = {
