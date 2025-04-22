@@ -16,7 +16,7 @@ function TimelineList({ items }: TimelineListProps) {
           location={item.location}
           role={item.role}
           duration={item.duration}
-          tasksMarkdown={item.tasksMarkdown}
+          tasksMarkdown={item.tasksMarkdown} 
         />
       ))}
     </ol>

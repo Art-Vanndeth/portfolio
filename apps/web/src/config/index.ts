@@ -113,9 +113,14 @@ const config: Config = {
     "pronouns": 'He/Him',
     "githubUsername": "Art-Vanndeth",
     "introduction": `
-I obtained my Bachelor's degree from [Royal University of Phnom Penh️ 🐼](https://www.ncu.edu.tw/), driven by a *sincere passion* for **Software Engineering 💻.**
+I obtained my Bachelor's degree from [Royal University of Phnom Penh️ 🐼](https://www.rupp.edu.kh/), driven by a *sincere passion* for **Software Engineering 💻.**
 
-Software is built by humans. Unfortunately, humans make errors, <mark class="text-orange-yellow-crayola bg-transparent"><b>LOTS of ERRORS.</b></mark> Throughout human history, humans have learned to craft machines and tools to help us construct complex architecture. Inspired by this, I explore practical methodologies and tools to improve large-scale software systems' quality, reliability, and efficiency.
+I am a flexible and adaptable professional with a passion for leadership,
+teamwork, and collaboration. With strong communication and
+organizational skills, I excel in dynamic environments and enjoy exploring
+new technologies. My goal is to use my expertise to drive innovation,
+support meaningful projects, and contribute to economic growth while
+building strong team relationships.
 
 In my spare time, I focus on contributing to open-source projects, alongside working out 💪🏻, capturing street photography 📸, and writing tech content ✍🏻.
 

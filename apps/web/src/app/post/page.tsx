@@ -75,7 +75,7 @@ async function BlogPosts(
             >
               <figure className="blog-banner-box">
                 <Image
-                  src={post.metadata.banner}
+                  src={post.metadata.banner || '/default-banner.jpg'} // Provide a fallback value
                   alt={post.metadata.alt || "Blog post image"}
                   width={1600}
                   height={900}
@@ -107,7 +107,7 @@ async function BlogPosts(
                 </h3>
                 <MarkdownRenderer
                   className="text-light-gray text-s font-light leading-6 overflow-hidden line-clamp-2"
-                  content={post.metadata.summary}
+                  content={post.metadata.summary || ''} // Provide a fallback value
                 />
               </div>
             </ProgressBarLink>

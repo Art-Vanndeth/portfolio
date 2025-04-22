@@ -22,7 +22,16 @@ function TimeLine({ data }: TimeLineProps) {
   return (
     <section className="timeline">
       <IconTitle icon={icon} title={title} />
-      <TimelineList items={items} />
+      <TimelineList
+        items={items.map((item) => ({
+          ...item,
+          tasksMarkdown: item.tasksMarkdown || '', // Provide a fallback value for tasksMarkdown
+          company: item.company || '', // Provide a fallback value for company
+          location: item.location || '', // Provide a fallback value for location
+          role: item.role || '', // Provide a fallback value for role
+          duration: item.duration || '', // Provide a fallback value for duration
+        }))}
+      />
     </section>
   );
 }

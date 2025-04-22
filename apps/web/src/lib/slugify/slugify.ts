@@ -1,8 +1,8 @@
 import { SlugifyOptions, CharMap } from './types';
 import { charMap, locales } from './data';
 
-function slugify(string: string, options?: SlugifyOptions | string): string {
-  if (typeof string !== 'string') {
+function slugify(input: string, options?: SlugifyOptions | string): string {
+  if (typeof input !== 'string') {
     throw new Error('slugify: string argument expected');
   }
 
@@ -11,34 +11,31 @@ function slugify(string: string, options?: SlugifyOptions | string): string {
     : options || {};
 
   const locale = locales[opts.locale || ''] || {};
-  const replacement = opts.replacement === undefined ? '-' : opts.replacement;
-  const trim = opts.trim === undefined ? true : opts.trim;
+  const replacement = opts.replacement ?? '-';
+  const trim = opts.trim ?? true;
 
-  let slug = Array.from(string.normalize())
-    .reduce((result, ch) => {
-      let appendChar = locale[ch];
-      if (appendChar === undefined) appendChar = charMap[ch];
-      if (appendChar === undefined) appendChar = ch;
-      if (appendChar === replacement) appendChar = ' ';
-      
-      return result + appendChar;
+  // Normalize the input string
+  let slug = Array.from(input.normalize('NFKD'))
+    .reduce((result, char) => {
+      let mappedChar = locale[char] ?? charMap[char] ?? char;
+      if (mappedChar === replacement) mappedChar = ' ';
+      return result + mappedChar;
     }, '')
-    .replace(opts.remove || /[^\w\s$*_+~.()'"!\-:@]+/g, '');
+    .replace(opts.remove || /[^\w\s$*_+~.()'"!\-:@]+/g, ''); // Remove unwanted characters
 
   if (opts.strict) {
-    slug = slug.replace(/[^A-Za-z0-9\s]/g, '');
+    slug = slug.replace(/[^A-Za-z0-9\s]/g, ''); // Strict mode: allow only alphanumeric and spaces
   }
 
   if (trim) {
-    slug = slug.trim();
+    slug = slug.trim(); // Trim leading and trailing spaces
   }
 
-  // Replace spaces with replacement character, treating multiple consecutive
-  // spaces as a single space.
+  // Replace spaces with the replacement character, collapsing multiple spaces
   slug = slug.replace(/\s+/g, replacement);
 
   if (opts.lower) {
-    slug = slug.toLowerCase();
+    slug = slug.toLowerCase(); // Convert to lowercase if required
   }
 
   return slug;
@@ -51,4 +48,3 @@ namespace slugify {
 }
 
 export default slugify;
-
