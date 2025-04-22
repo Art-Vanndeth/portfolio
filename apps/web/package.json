@@ -1,19 +1,19 @@
 {
-  "name": "1chooo-com",
+  "name": "vandeth-com",
   "version": "0.6.6",
   "private": true,
   "license": "CC-BY-4.0",
   "author": {
-    "name": "1chooo",
-    "email": "hugo970217@gmail.com"
+    "name": "vandeth",
+    "email": "artvandeth@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/1chooo/1chooo.com"
+    "url": "https://github.com/Art-Vanndeth/panda.engineer"
   },
-  "homepage": "https://1chooo.com",
+  "homepage": "https://panda.engineer",
   "bugs": {
-    "url": "https://github.com/1chooo/1chooo.com/issues"
+    "url": "https://github.com/Art-Vanndeth/panda.engineer/issues"
   },
   "keywords": [
     "next",

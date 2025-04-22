@@ -6,7 +6,7 @@ const { title, description } = config
 function manifest(): MetadataRoute.Manifest {
   return {
     name: `${title}`,
-    short_name: '1chooo.com',
+    short_name: 'panda.engineer',
     categories: ['portfolio', 'blog', 'personal', 'web development'],
     description: `${description}`,
     start_url: '/',

@@ -25,19 +25,19 @@ export async function generateMetadata({ params }: { params: tParams }): Promise
     banner,
   } = post.metadata;
   let ogImage = banner
-    ? `https://1chooo.com${banner}`
-    : `https://1chooo.com/og?title=${title}`;
+    ? `https://panda.engineer${banner}`
+    : `https://panda.engineer/og?title=${title}`;
 
   return {
     title,
     description,
     openGraph: {
       title,
-      siteName: 'Chun-Ho (Hugo) Lin - 1chooo | Open Source Enthusiast',
+      siteName: 'Art Vandeth | Open Source Enthusiast',
       description,
       type: 'article',
       publishedTime,
-      url: `https://1chooo.com/portfolio/${post.slug}`,
+      url: `https://panda.engineer/portfolio/${post.slug}`,
       locale: 'en_US',
       images: [
         {
@@ -112,7 +112,7 @@ export default async function Portfolio(props: { params: tParams }) {
     <div>
       <article>
         <section className="blog-text">
-          <PageHeader header="Deth's Portfolio" />
+          <PageHeader header="Vandeth's Portfolio" />
           <h1 className="title font-semibold text-2xl font-text-2xl tracking-tighter max-w-[650px]">
             <MarkdownRenderer content={post.metadata.title} />
           </h1>

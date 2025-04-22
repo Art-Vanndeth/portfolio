@@ -8,38 +8,38 @@ function Footer() {
         &copy; 2024 - 2025{" "}
         <Link
           className="inline text-orange-yellow-crayola underline hover:text-opacity-70"
-          href="https://1chooo.com"
+          href="https://vandeth.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          1chooo
+          vandeth
         </Link>
       </div>
       <div className="space-x-4">
-        <Link
-          className="inline text-orange-yellow-crayola underline hover:text-opacity-70"
-          href="https://github.com/1chooo/1chooo.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vcard
-        </Link>
-        <Link
-          className="inline text-orange-yellow-crayola underline hover:text-opacity-70"
-          href="https://docs.1chooo.com/terms"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Terms
-        </Link>
-        <Link
-          className="inline text-orange-yellow-crayola underline hover:text-opacity-70"
-          href="https://docs.1chooo.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Docs
-        </Link>
+        {/*<Link*/}
+        {/*  className="inline text-orange-yellow-crayola underline hover:text-opacity-70"*/}
+        {/*  href="https://github.com/1chooo/1chooo.com"*/}
+        {/*  target="_blank"*/}
+        {/*  rel="noopener noreferrer"*/}
+        {/*>*/}
+        {/*  Vcard*/}
+        {/*</Link>*/}
+        {/*<Link*/}
+        {/*  className="inline text-orange-yellow-crayola underline hover:text-opacity-70"*/}
+        {/*  href="https://docs.1chooo.com/terms"*/}
+        {/*  target="_blank"*/}
+        {/*  rel="noopener noreferrer"*/}
+        {/*>*/}
+        {/*  Terms*/}
+        {/*</Link>*/}
+        {/*<Link*/}
+        {/*  className="inline text-orange-yellow-crayola underline hover:text-opacity-70"*/}
+        {/*  href="https://docs.1chooo.com"*/}
+        {/*  target="_blank"*/}
+        {/*  rel="noopener noreferrer"*/}
+        {/*>*/}
+        {/*  Docs*/}
+        {/*</Link>*/}
       </div>
     </footer>
   )

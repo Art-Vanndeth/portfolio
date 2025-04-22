@@ -51,7 +51,7 @@ export default async function Portfolio(
 
   return (
     <article>
-      <PageHeader header="Deth's Portfolio" />
+      <PageHeader header="Vandeth's Portfolio" />
       <section className="projects">
         <FilterList
           path="portfolio"
@@ -84,7 +84,7 @@ export default async function Portfolio(
                     placeholder="blur"
                     loading="eager"
                     quality={50}
-                    blurDataURL="https://docs.1chooo.com/images/cover-with-1chooo-com.png"
+                    blurDataURL="https://docs.panda.engineer/images/cover-with-panda-engineer.png"
                   />
                 </figure>
                 <h3 className="project-title">

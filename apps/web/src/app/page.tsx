@@ -48,8 +48,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hugo ChunHo Lin (1chooo) | Open Source Enthusiast",
     description:
-      "I'm Chun-Ho (Hugo) Lin, a graduate with a Bachelor's degree from National Central University (NCU) 🐿️, driven by a sincere passion for Software Engineering 💻.",
-    images: "https://docs.1chooo.com/images/cover-with-1chooo-com.png",
+      "I'm Art Vandeth, a graduate with a Bachelor's degree from National Central University (NCU) 🐿️, driven by a sincere passion for Software Engineering 💻.",
+    images: "https://docs.panda.engineer/images/cover-with-panda-engineer.png",
   },
   icons: {
     icon: '/favicon.ico',
@@ -109,7 +109,7 @@ async function About() {
   }));
 
   let header = preferredName ?
-    `About ${preferredName} 👨🏻‍💻` : `About ${firstName} ${lastName} 👨🏻‍💻`;
+    `About ${preferredName} 👨🏻‍💻` : `About ${lastName} 👨🏻‍💻`;
 
   return (
     <article>

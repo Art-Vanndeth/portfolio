@@ -1,19 +1,19 @@
 import { Config } from "@/types/config";
 import { MdOutlineDevices, MdAttachment } from "react-icons/md";
 import { IoSchoolOutline } from "react-icons/io5";
-import { PiTrophy, PiBooks, PiMediumLogoBold } from "react-icons/pi";
+import {PiTrophy, PiBooks, PiMediumLogoBold, PiFileCSharp} from "react-icons/pi";
 import { GoalIcon, ProjectIcon, ProjectRoadmapIcon } from '@primer/octicons-react'
-import { LuGithub, LuPencil, LuLinkedin, LuRss, LuMail, LuMapPin } from "react-icons/lu";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaReact, FaAws } from "react-icons/fa";
-import { TbPhoneCalling } from "react-icons/tb";
+import {LuGithub, LuPencil, LuLinkedin, LuRss, LuMail, LuMapPin, LuInstagram} from "react-icons/lu";
+import {FaFlutter, FaSquareInstagram, FaXTwitter} from "react-icons/fa6";
+import {FaReact, FaAws, FaInstagramSquare} from "react-icons/fa";
+import {TbBrandCSharp, TbPhoneCalling} from "react-icons/tb";
 import { IoCalendarOutline } from "react-icons/io5";
-import { AiOutlinePython } from "react-icons/ai";
+import {AiFillInstagram, AiOutlineInstagram, AiOutlineJava, AiOutlinePython} from "react-icons/ai";
 import { RiJavaLine, RiJavascriptLine } from "react-icons/ri";
-import { SiLatex, SiFastapi, SiKubernetes, SiPostman } from "react-icons/si";
-import { BiLogoFlask } from "react-icons/bi";
+import {SiLatex, SiFastapi, SiKubernetes, SiPostman, SiSpring, SiApachekafka, SiSocketdotio} from "react-icons/si";
+import {BiLogoFlask, BiLogoInstagram} from "react-icons/bi";
 import { VscTerminalLinux, VscAzure } from "react-icons/vsc";
-import { DiRedis } from "react-icons/di";
+import {DiDart, DiJava, DiRedis} from "react-icons/di";
 import {
   TbBrandCpp, TbBrandTypescript,
   TbBrandGolang, TbBrandNextjs,
@@ -21,6 +21,8 @@ import {
   TbMarkdown, TbBrandAstro, TbBrandTerraform,
   TbPhotoSquareRounded
 } from "react-icons/tb";
+import {GiSpring} from "react-icons/gi";
+import {GrJava} from "react-icons/gr";
 
 const config: Config = {
   avatar: '/images/profile.webp',
@@ -98,8 +100,9 @@ const config: Config = {
     { url: `https://www.linkedin.com/in/art-vandeth-1a15a3325/`, icon: LuLinkedin, name: 'LinkedIn' },
     { url: `https://medium.com/@artvandeth`, icon: PiMediumLogoBold, name: 'Medium' },
     { url: `https://x.com/vandeth10726`, icon: FaXTwitter, name: 'Twitter' },
-    { url: `/rss.xml`, icon: LuRss, name: 'RSS Feed' },
-    { url: `/cv.pdf`, icon: MdAttachment, name: 'CV' },
+    { url: `https://www.instagram.com/xa_deth/`, icon: LuInstagram, name: 'Instagram' },
+    // { url: `/rss.xml`, icon: LuRss, name: 'RSS Feed' },
+    // { url: `/cv.pdf`, icon: MdAttachment, name: 'CV' },
   ],
   about: {
     "firstName": 'Art',
@@ -146,14 +149,15 @@ In my spare time, I focus on contributing to open-source projects, alongside wor
         { name: 'TypeScript', icon: TbBrandTypescript },
         { name: 'Golang', icon: TbBrandGolang },
         { name: 'C++', icon: TbBrandCpp },
-        { name: 'Java', icon: RiJavaLine },
+        { name: 'C#', icon: TbBrandCSharp },
+        { name: 'Java', icon: DiJava },
         { name: 'JavaScript', icon: RiJavascriptLine },
-        { name: 'LaTeX', icon: SiLatex },
-        { name: 'Markdown', icon: TbMarkdown },
-        { name: 'Astro', icon: TbBrandAstro },
-        { name: 'Terraform', icon: TbBrandTerraform },
+        { name: 'Websocket', icon: SiSocketdotio },
+        { name: 'Kafka', icon: SiApachekafka },
+        { name: 'Dart', icon: DiDart },
       ],
       frameworks: [
+        { name: 'Spring', icon: SiSpring },
         { name: 'React', icon: FaReact },
         { name: 'FastAPI', icon: SiFastapi },
         { name: 'Flask', icon: BiLogoFlask },
@@ -162,11 +166,10 @@ In my spare time, I focus on contributing to open-source projects, alongside wor
         { name: 'AWS', icon: FaAws },
         { name: 'Next.js', icon: TbBrandNextjs },
         { name: 'Docker', icon: TbBrandDocker },
-        { name: 'MySQL', icon: TbBrandMysql },
         { name: 'Django', icon: TbBrandDjango },
         { name: 'Kubernetes', icon: SiKubernetes },
         { name: 'Postman', icon: SiPostman },
-        { name: 'Azure', icon: VscAzure },
+        { name: 'Flutter', icon: FaFlutter },
       ],
     }
   },

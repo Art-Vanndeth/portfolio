@@ -25,7 +25,7 @@ export async function GET(req: NextRequest) {
           flexDirection: 'column',
           alignItems: 'flex-start',
           justifyContent: 'center',
-          backgroundImage: 'url(https://docs.1chooo.com/images/cover-with-1chooo-com.png)',
+          backgroundImage: 'url(https://docs.panda.engineer/images/cover-with-panda-engineer.png)',
         }}
       >
         <div
