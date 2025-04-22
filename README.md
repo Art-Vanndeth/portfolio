@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-<a href="https://1chooo.com">
+<a href="https://artvandeth.vercel.app/">
   <img alt="1chooo.com Home Page" src="./.github/images/cover-transparent-with-1chooo-com.png">
 </a>
 
